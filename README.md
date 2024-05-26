@@ -51,116 +51,44 @@ Support Vector Machine: A model that tries to find the hyperplane that best sepa
 An optimized version of gradient boosting that is efficient and effective for large datasets.
 
 
-Evaluation Metrics
+# 6. Evaluation Metrics
 The performance of the models was evaluated using the following metrics:
-
-Root Mean Squared Error (RMSE): Measures the square root of the average squared differences between predicted and actual values.
+* Root Mean Squared Error (RMSE):
+   Measures the square root of the average squared differences between predicted and actual values.
 RMSE
-=
-1
-𝑛
-∑
-𝑖
-=
-1
-𝑛
-(
-𝑦
-𝑖
-−
-𝑦
-^
-𝑖
-)
-2
-RMSE= 
-n
-1
-​
- ∑ 
-i=1
-n
-​
- (y 
-i
-​
- − 
-y
-^
-​
-  
-i
-​
- ) 
-2
- 
-​
- 
-R-squared (R²) Score: Represents the proportion of variance for the target variable explained by the input features.
-𝑅
-2
-=
-1
-−
-∑
-𝑖
-=
-1
-𝑛
-(
-𝑦
-𝑖
-−
-𝑦
-^
-𝑖
-)
-2
-∑
-𝑖
-=
-1
-𝑛
-(
-𝑦
-𝑖
-−
-𝑦
-ˉ
-)
-2
-R 
-2
- =1− 
-∑ 
-i=1
-n
-​
- (y 
-i
-​
- − 
-y
-ˉ
-​
- ) 
-2
- 
-∑ 
-i=1
-n
-​
- (y 
-i
-​
- − 
-y
-^
-​
-  
-i
-​
- ) 
-2
- 
-​
+* R-squared (R²) Score:
+  Represents the proportion of variance for the target variable explained by the input features.
+
+# 7. Results
+The performance of the models on the test set was as follows:
+* Linear Regression: RMSE: 64.90, R²: 79.03%
+* Lasso Regression: RMSE: 62.81, R²: 80.36%
+* Ridge Regression: RMSE: 64.86, R²: 79.05%
+* Random Forest Regression: RMSE: 44.20, R²: 90.27%
+* Gradient Boosting Regression: RMSE: 46.92, R²: 89.04%
+* Support Vector Machine: RMSE: 126.27, R²: 20.63%
+* XGBoost Algorithm: RMSE: 48.87, R²: 88.11%
+
+# 8. Conclusion
+In conclusion, the Random Forest Regression model provided the best performance with the lowest RMSE and highest R² score, making it the most suitable model for predicting house prices in Bangalore. Models like Linear Regression and Ridge Regression showed decent performance but were outperformed by ensemble methods. Support Vector Machine had the least predictive power for this dataset.
+
+# 9. Future Work
+Future work could involve:
+
+* Further hyperparameter tuning for all models to improve performance.
+* Exploring other advanced regression techniques.
+* Incorporating additional features or external datasets to enhance model accuracy.
+* Implementing cross-validation to ensure model robustness.
+
+# 10. References
+
+* Kaggle Dataset: Bengaluru House Price Data
+* Scikit-learn documentation: Scikit-learn
+* XGBoost documentation: XGBoost
+This README provides an overview of the Bangalore House Price Prediction project, detailing the steps taken, models used, and their performance, along with insights and future directions.
+
+
+
+
+
+
