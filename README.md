@@ -36,17 +36,16 @@ Creating new features to enhance the predictive power of the models.
 
 # 5. Models Used
 Seven regression models were used in this project:
-
-# Linear Regression: 
+* Linear Regression: 
 A basic regression model that assumes a linear relationship between the input features and the target variable.
-# Lasso Regression: 
+* Lasso Regression: 
 A linear model with L1 regularization to prevent overfitting by penalizing large coefficients.
-# Ridge Regression:
+* Ridge Regression:
 Similar to Lasso, but uses L2 regularization.
-# Random Forest Regression: 
+* Random Forest Regression: 
 An ensemble model that builds multiple decision trees and averages their predictions.
-# Gradient Boosting Regression:
+* Gradient Boosting Regression:
 An ensemble model that builds trees sequentially, with each tree correcting errors made by the previous ones.
 Support Vector Machine: A model that tries to find the hyperplane that best separates the data into different classes, adapted here for regression.
-# XGBoost: 
+* XGBoost: 
 An optimized version of gradient boosting that is efficient and effective for large datasets.
