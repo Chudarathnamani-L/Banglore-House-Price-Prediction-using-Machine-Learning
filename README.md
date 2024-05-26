@@ -49,3 +49,118 @@ An ensemble model that builds trees sequentially, with each tree correcting erro
 Support Vector Machine: A model that tries to find the hyperplane that best separates the data into different classes, adapted here for regression.
 * XGBoost: 
 An optimized version of gradient boosting that is efficient and effective for large datasets.
+
+
+Evaluation Metrics
+The performance of the models was evaluated using the following metrics:
+
+Root Mean Squared Error (RMSE): Measures the square root of the average squared differences between predicted and actual values.
+RMSE
+=
+1
+𝑛
+∑
+𝑖
+=
+1
+𝑛
+(
+𝑦
+𝑖
+−
+𝑦
+^
+𝑖
+)
+2
+RMSE= 
+n
+1
+​
+ ∑ 
+i=1
+n
+​
+ (y 
+i
+​
+ − 
+y
+^
+​
+  
+i
+​
+ ) 
+2
+ 
+​
+ 
+R-squared (R²) Score: Represents the proportion of variance for the target variable explained by the input features.
+𝑅
+2
+=
+1
+−
+∑
+𝑖
+=
+1
+𝑛
+(
+𝑦
+𝑖
+−
+𝑦
+^
+𝑖
+)
+2
+∑
+𝑖
+=
+1
+𝑛
+(
+𝑦
+𝑖
+−
+𝑦
+ˉ
+)
+2
+R 
+2
+ =1− 
+∑ 
+i=1
+n
+​
+ (y 
+i
+​
+ − 
+y
+ˉ
+​
+ ) 
+2
+ 
+∑ 
+i=1
+n
+​
+ (y 
+i
+​
+ − 
+y
+^
+​
+  
+i
+​
+ ) 
+2
+ 
+​
